@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Youtube-Watch-Later-AutoRemove
 // @namespace    https://github.com/bulbipop/youtube-WL-autoremove
-// @version      0.1
+// @version      0.2
 // @match        https://www.youtube.com/playlist?list=WL
 // @run-at       document-idle
 // ==/UserScript==
 
 function clickDeleteButton() {
-    document.querySelector('ytd-menu-service-item-renderer').click()
+    document.querySelectorAll('ytd-menu-service-item-renderer')[1].click()
 }
 
 function main() {
